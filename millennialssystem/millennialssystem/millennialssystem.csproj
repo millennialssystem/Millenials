@@ -5,6 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Views\Shared\Vitality\**" />
+    <Content Remove="Views\Shared\Vitality\**" />
+    <EmbeddedResource Remove="Views\Shared\Vitality\**" />
+    <None Remove="Views\Shared\Vitality\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Remove="wwwroot\js\evaluacion.js" />
   </ItemGroup>
 
@@ -15,10 +22,6 @@
 
   <ItemGroup>
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.4" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Views\Shared\Vitality\" />
   </ItemGroup>
 
 </Project>
