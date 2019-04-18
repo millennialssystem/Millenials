@@ -1,12 +1,14 @@
-﻿@{
+﻿@model MSDeveloper.Models.WebSetting
+@{
     ViewData["Title"] = "Principal";
 }
 
 @*@foreach (var item in (List<millennialssystem.Controllers.HomeController>)ViewBag)
-{
+    {
 
-}*@
+    }*@
 
+@Model.Name
 
 @* Modals Principal de vitality *@
 @Html.Partial("_ModalsVitality")
@@ -15,7 +17,7 @@
 @Html.Partial("_MenuVitality")
 
 @* Header de vitality *@
-@Html.Partial("__HeaderVitality" )
+@Html.Partial("__HeaderVitality")
 
 @* About de vitality *@
 @Html.Partial("__AboutVitality")
