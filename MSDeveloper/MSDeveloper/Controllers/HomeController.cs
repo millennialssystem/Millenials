@@ -5,35 +5,30 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using MSDeveloper.Models;
+using MSDeveloper.Services;
+using MySql.Data;
+using MySql.Data.MySqlClient;
 
 namespace MSDeveloper.Controllers
 {
     public class HomeController : Controller
     {
+        MSUtils mSUtil;
         public IActionResult Index()
         {
-            var configu = new WebSetting()
-            {
-                Id = 1,
-                Name = "jose"
-            };
-            return View(configu);
+            try
+            {            
+            mSUtil = new MSUtils();            
+            var webSetting = new WebSettings(mSUtil.WebSettingConfiguration);
+            return View(webSetting);
+            }
+            catch (Exception ex)
+            {               
+                mSUtil.ConsoleLogError("HomeController.cs;Index", ex);
+                return View();
+            }
         }
-
-        public IActionResult About()
-        {
-            ViewData["Message"] = "Your application description page.";
-
-            return View();
-        }
-
-        public IActionResult Contact()
-        {
-            ViewData["Message"] = "Your contact page.";
-
-            return View();
-        }
-
+    
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
