@@ -1,0 +1,5 @@
+DROP PROCEDURE IF EXISTS GetWebSettings;//
+CREATE PROCEDURE GetWebSettings()
+BEGIN
+SELECT wse_id, wse_name, wse_value FROM tm_wse_web_settings;
+END

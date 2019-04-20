@@ -1,0 +1,5 @@
+1) Descargar e instalar xampp https://www.apachefriends.org/es/index.html
+	-No dejar la configuracion por defecto, sin contraseña
+2) Crear una base de datos llamada "ms"
+3) Importar el archivo "ms.sql" que esta al nivel de este documentos en las carpetas
+4) Abrir la solucion y probar el funcionamiento

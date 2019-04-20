@@ -21,8 +21,10 @@ namespace MSDeveloper.Services
             string connStr = "server=localhost;user=root;database=ms;port=3306;password=";
             //Beginmomentaneo
             WebSettingConfiguration = new DataTable();
-            WebSettingConfiguration.Columns.Add("Template");
-            //Endmomentaneo   
+                WebSettingConfiguration.Columns.Add("wse_id");
+                WebSettingConfiguration.Columns.Add("wse_name");
+                WebSettingConfiguration.Columns.Add("wse_value");
+                //Endmomentaneo   
             }
             catch (Exception ex)
             {

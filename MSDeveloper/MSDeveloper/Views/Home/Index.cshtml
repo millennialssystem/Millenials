@@ -8,33 +8,37 @@
 
     }*@
 
-@Model.Template
 
-@* Modals Principal de vitality *@
-@Html.Partial("_ModalsVitality")
+@if (@Model.Template == "Vitality")
+{
+    @* Modals Principal de vitality *@
+    @Html.Partial("_ModalsVitality")
 
-@* Menu Principal de vitality *@
-@Html.Partial("_MenuVitality")
+    @* Menu Principal de vitality *@
+    @Html.Partial("_MenuVitality")
 
-@* Header de vitality *@
-@Html.Partial("__HeaderVitality")
+    @* Header de vitality *@
+    @Html.Partial("__HeaderVitality")
 
-@* About de vitality *@
-@Html.Partial("__AboutVitality")
+    @* About de vitality *@
+    @Html.Partial("__AboutVitality")
 
-@* Process de vitality *@
-@Html.Partial("__ProcessVitality")
+    @* Process de vitality *@
+    @Html.Partial("__ProcessVitality")
 
-@* Work de vitality *@
-@Html.Partial("__WorkVitality")
+    @* Work de vitality *@
+    @Html.Partial("__WorkVitality")
 
-@* Pricing de vitality *@
-@Html.Partial("__PricingVitality")
+    @* Pricing de vitality *@
+    @Html.Partial("__PricingVitality")
 
-@* Contact de vitality *@
-@Html.Partial("__ContactVitality")
+    @* Contact de vitality *@
+    @Html.Partial("__ContactVitality")
 
-@* Footer de vitality *@
-@Html.Partial("__FooterVitality")
+    @* Footer de vitality *@
+    @Html.Partial("__FooterVitality")
+}
+
+
 
 
