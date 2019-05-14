@@ -35,7 +35,7 @@ namespace MSDeveloper.Models
             DataTable dt = mSUtil.ExecuteStopProcedureSelect(connStr, "GetWebSettings", parametros, configuration);
                 foreach (DataRow row in dt.Rows)
                 {
-                    if(row["wse_name"].ToString() == "Template")
+                    if(row["wse_key"].ToString() == "Template")
                         Template = row["wse_value"].ToString();
                 }
             }

@@ -22,7 +22,7 @@ namespace MSDeveloper.Services
             //Beginmomentaneo
             WebSettingConfiguration = new DataTable();
                 WebSettingConfiguration.Columns.Add("wse_id");
-                WebSettingConfiguration.Columns.Add("wse_name");
+                WebSettingConfiguration.Columns.Add("wse_key");
                 WebSettingConfiguration.Columns.Add("wse_value");
                 //Endmomentaneo   
             }
